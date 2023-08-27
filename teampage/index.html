@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- second cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div img {
+    margin-left: 27px;
+}
+
+ul {
+    position: absolute;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    font-size: 18px;
+}
+
+#team {
+    margin-right: 150px;
+}
+
+#h23 {
+    position: absolute;
+    top: 180px;
+    left: 10%;
+    width: 350px;
+    color: #ffffff;
+    font-family: Great vibes;
+    font-size: 50px;
+    font-weight: lighter;
+
+
+
+}
+
+#h2 {
+    position: absolute;
+    top: 250px;
+    left: 15%;
+    width: 350px;
+    color: #fff;
+    font-family: Great vibes;
+    font-size: 50px;
+    font-weight: lighter;
+
+
+
+}
+
+#h21 {
+    position: absolute;
+    top: 320px;
+    left: 10%;
+    width: 400px;
+    color: #fff;
+    font-family: Great vibes;
+    font-size: 50px;
+    font-weight: lighter;
+
+}
+
+#h22 {
+    position: absolute;
+    top: 400px;
+    left: 15%;
+    width: 400px;
+    color: #fff;
+    font-family: Great vibes;
+    font-size: 50px;
+    font-weight: lighter;
+
+
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'PT Serif', serif;
+}
+.head h2{
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+}
+
+.universities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.discrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discrip h4 {
+    margin-left: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0px 0px 8px #5f5c5c,
+    0px 0px 8px  #5f5c5c,0px 0px 8px  #5f5c5c;
+    border-radius:8px;
+    background-color: #fff;
+}
+.box img{
+    margin: 5px;
+    border-radius: 5px;
+}
+.container2{
+    background-color: #f3eed5;
+    height: 520px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'PT Serif', serif;   
+}
+.heading h2{
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+
+}
+.mentors{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.box2{
+    width: 200px;
+
+    
+}
+.box2 img{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px #5f5c5c ;
+}
+.advicer h2{
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+ 
+}
+.advicer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'PT Serif', serif;  
+    
+    
+
+}
+.mentorsadvice{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+.box3 img {
+    border-radius: 50%;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 2px;
+    padding: 8px 10px;
+    font-size: 18px;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.container3{
+    background-color:#f3eed5;
+}
+footer{
+    background-color: #908787;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* making responsive */
+@media screen and (max-width:768px){
+    .universities{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+.mentors{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+    
+}
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="div">
+                <img src="logo-removebg-preview.png" alt="" height="30px" width="30px">
+                <h4 id="team">Team Work</h4>
+
+            </div>
+
+            <ul>
+                <li><a href="">Home</li>
+                <li><a href="">About Us</li>
+                <li><a href="">Main</li>
+                <li><a href="">Footer</li>
+
+
+            </ul>
+
+
+
+        </nav>
+        <div class="main">
+            <img src="download.png" alt="" width="1560" height="500px">
+            <div>
+                <h2 id="h23">
+                    Learn from Scientists</h2>
+                <h2 id="h2">
+                    Reasearch Scholars
+                </h2>
+                <h2 id="h21">
+                    From The Top
+                </h2>
+                <h2 id="h22">
+                    Institute of the World
+                </h2>
+            </div>
+        </div>
+        <div class="container2">
+        <div class="head">
+
+            <h2>Top Universities</h2>
+        </div>
+        <div class="universities">
+            <div class="box">
+                <img src="cambridge.jpeg" alt="">
+                <div class="discrip">
+                    <h3> Cambridge University
+
+                    </h3>
+                    <h4>
+                        United Kingdom
+                    </h4>
+                    <p>
+                        This university was recognized with loyal charter grante
+                        d by King Henry III .It has 31 semi-autonomous consistituent colleges and over 150 academic
+                        department and faculties.
+                    </p>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Harvard.jpg" alt="">
+                <div class="discrip">
+                    <h3> Harvard University
+                        <h4>
+                            United States
+                        </h4>
+                    </h3>
+                    <p> This university was authorized by the Massach
+                        usetts colonical.It composed of ten academic faculties & Harvard Radcliffe
+                         Institute.It offers study in a wide range of students.
+                        </p>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="california.jpg" alt="">
+                <div class="discrip">
+                    <h3> University of California
+                        <h4>
+                            United States
+                        </h4>
+                    </h3>
+                    <p>
+                        It is the world's leading public reasearch university system.With 10 campuses,5 medical center,3 national labs.
+                        It is the natiomal's first reasearch institute od the 21 st century.
+
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="eth.jpg" alt="">
+                <div class="discrip">
+                    <h3> ETH Zurich
+                        <h4>
+                            Switzerland
+                         </h4>
+                    </h3>
+                    <p>
+                        ETH Zurich is a research university in Zurich.Founded by the Swiss Federal goverment in 1854.
+                        It was modeled on Ecole polytechnical in Paris it has mission to educate.
+                        </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+        <!-- mentors  -->
+        <div class="heading">
+            <h2>Meet our Mentors</h2>
+       
+        </div>
+        <div class="mentors">
+             <div class="box2">
+                <img src="images (1).jpeg" alt="">
+                <h4>Prof.Shubham Tripathi</h4>
+                <h5>Harvard univrsity</h5>
+             </div>
+             <div class="box2">
+                <img src="images (1).jpeg" alt="">
+                <h4>Prof.Shubham Tripathi</h4>
+                <h5>University of California</h5>
+             </div>
+             <div class="box2">
+                <img src="images (1).jpeg" alt="">
+                <h4>Prof.Shubham Tripathi</h4>
+                <h5>ETH zurich</h5>
+             </div>
+             <div class="box2">
+                <img src="images (1).jpeg" alt="">
+                <h4>Prof.Shubham Tripathi</h4>
+                <h5>Cambridge University</h5>
+             </div>
+            
+            </div>
+            <div class="container3">
+
+            
+            <div class="advicer">
+                <h2>Our Advicer </h2>
+            </div>
+            <div class="mentorsadvice">
+                <div class="box3">
+                    <img src="images (2).jpeg" alt="">
+                    <h4>Prof.Seema Yadav</h4>
+                    <button>Message Now</button>
+                </div>
+                <div class="box3">
+                    <img src="images (1).jpeg" alt="">
+                    <h4>Prof.Sri Nand</h4>
+                    <button>Message Now</button>
+                
+                </div>
+            </div>
+             </div>
+            <footer>
+                Contact us now &copy;
+            </footer>
+    
+    </div>
+
+</body>
+
+</html>
